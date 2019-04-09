@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+mongoose.Promise = global.Promise;
 // mongoose.connect("mongodb+srv://root:tomatobox91!@cluster0-txkda.gcp.mongodb.net/test", { useNewUrlParser: true });
 mongoose.connect("mongodb://justwork925:tomatobox91!@ds159767.mlab.com:59767/iamtesting", { useNewUrlParser: true });
 const db = mongoose.connection;
